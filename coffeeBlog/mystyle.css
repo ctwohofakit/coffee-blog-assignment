@@ -16,6 +16,10 @@ img{
     max-width: 100%;
 }
 
+a:hover{
+    text-decoration: underline;
+}
+
 
 /*utilities*/
 .container{
@@ -34,6 +38,9 @@ img{
     font-size: 12px;
     letter-spacing: 3px;
 }
+.btn-read:hover {
+    background-color: #333;
+}
 
 .btn-moreInfo{
     display:inline-block;
@@ -44,6 +51,10 @@ img{
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 3px;
+}
+
+.btn-moreInfo:hover {
+    background-color: #33140c;
 }
 
 .logoBar{
@@ -60,7 +71,7 @@ img{
 
 
 /*header*/
-header{
+header.site-init{
     background-image: url(./image/img/banner.jpg);
     background-position: center center;
     background-size: cover;
@@ -68,6 +79,18 @@ header{
     color:white;
     text-align: center;
 }
+
+header.secondary{
+    background-color: black;
+    height: 100px;
+    color:white;
+
+}
+.third{
+    text-align:center;
+
+}
+
 
 /*main*/
 .main-container {
@@ -87,16 +110,18 @@ header{
 
 /*About Us Main Section*/
 .about-us {
-    max-width: 950px;
+    max-width: 80%;
     margin: auto; 
     padding: 10px;
 
 }
+
 .about-us h2 {
     text-align: center;
 }
 
 .about-us img {
+    max-width: 70%;
     margin-right:auto;
     display: block;
 }
@@ -108,6 +133,160 @@ header{
 }
 
 
+/*courses*/
+.course-item {
+    display: flex;
+    background-color: #a25d39; 
+    padding: 50px;
+    border-radius: 15px;
+    width: 70%;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+
+.course-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 40%;
+    margin-right: 10px; 
+    box-sizing: border-box;
+
+}
+
+.course-img1{
+    width: 49%;
+    height: auto;
+    transform: translateY(10%);
+    max-width: 100%; 
+
+}
+.course-img2{
+    width: 49%;
+    height: auto;
+    align-self: self-end;
+    transform: translateY(-10%);
+
+}
+
+.text-content {
+    flex-basis: 60%; /* Take up about 60% of the container */
+    padding-left: 20px;
+}
+
+.text-content h1{
+    color: #070404;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.text-content p{
+    line-height: 1.4;
+}
+
+
+/*curriculum section*/
+.curriculum{
+    display: flex;
+    background-color: #f5f5ef; 
+    padding: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.curriculum-content{
+    display:block;
+    text-align: left;
+    flex-direction: column;
+    flex-basis: 40%;
+
+}
+.curriculum h2{
+    color:#d3682a;
+    text-transform: uppercase;
+    font-size: 30px;
+
+}
+.curriculum h3{
+    font-size: 28px;
+}
+.curriculum p{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*image grid*/
+.image-section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-basis: 80% ;
+}
+
+.image-item {
+    text-align: center;
+}
+
+.image-item img {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.image-item a {
+    display: block;
+    font-weight: bold;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+/*contact form*/
+.contact-container{
+    display:flex;
+    flex-direction:column;
+    padding: 50px;
+}
+
+
+.contact-form{
+    background-color:white;
+    margin-top: -50px;
+    padding: 30px;
+}
+
+.input-container{
+    margin-bottom:20px;
+    margin-left: auto;
+}
+
+.input-container label{
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+}
+
+.input-container input, 
+.input-container textarea{
+    width:80%;
+    padding: 5px;
+    border-radius: 3px;
+    border:1px solid black;
+}
+
+.contact-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+}
+
+
+
+
+
 /*footer*/
 footer {
     left: 0;
@@ -115,7 +294,7 @@ footer {
     width: 100%; 
     background-color: black;
     height: 80px; 
-    padding: 18px;
+    padding: 20px;
     color: white;
 }
 
